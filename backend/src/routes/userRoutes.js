@@ -1,20 +1,20 @@
 import express from "express";
-import verifyToken from "../middlewares/verifyToken.js";
-import {
-    displayHome,
-    getUsers,
-    getUserById,
-    createUser,
-    updateUser,
-    deleteUser
-} from "../controllers/userControllers.js";
+import { verifyToken } from "../utils/middlewares/verifyToken.js";
+
+import { displayHome } from "../controllers/userControllers/displayHome.js";
+import { singUp } from "../controllers/userControllers/singUp.js";
+import { logIn } from "../controllers/userControllers/logIn.js";
+import { getUsers, getUserById } from "../controllers/userControllers/getUsers.js";
+import { updateUser } from "../controllers/userControllers/updateUser.js";
+import { deleteUser } from "../controllers/userControllers/deleteUser.js";
 
 const router = express.Router();
 
-router.get('/', verifyToken, displayHome);
+router.get('/', displayHome);
+router.post('/singUp', singUp);
+router.post('/logIn', logIn);
 router.get('/users', verifyToken, getUsers);
 router.get('/users/:id', verifyToken, getUserById);
-router.post('/users', verifyToken, createUser);
 router.put('/users/:id', verifyToken, updateUser);
 router.delete('/users/:id', verifyToken, deleteUser);
 

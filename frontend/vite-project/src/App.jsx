@@ -7,7 +7,6 @@ const App = () => (
   <Router>
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/protected" element={<Protected />} />
     </Routes>
   </Router>
 );
