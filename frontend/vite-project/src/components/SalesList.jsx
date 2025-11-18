@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/salesList.css'; // Usaremos un archivo nuevo basado en customerList
+import '../styles/salesList.css';
 
 const SalesList = () => {
     const [sales, setSales] = useState([]);

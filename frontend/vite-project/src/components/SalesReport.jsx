@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/salesReport.css'; // Crearemos este archivo abajo
+import '../styles/salesReport.css';
 
 const SalesReport = () => {
     const [reportData, setReportData] = useState([]);
@@ -16,7 +16,6 @@ const SalesReport = () => {
     }, []);
 
     const formatCurrency = (amount) => {
-        // Postgres devuelve SUM como string, lo convertimos a Number
         const value = Number(amount);
         return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
     };

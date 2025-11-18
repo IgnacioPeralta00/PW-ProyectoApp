@@ -1,18 +1,15 @@
-/* 1. Wrapper para centrar todo en pantalla y asegurar fondo claro */
 .page-wrapper {
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* Alineado arriba pero con margen */
     padding-top: 4rem;
     background-color: #f3f4f6;
-    /* Gris muy suave de fondo de pantalla */
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* 2. La "Tarjeta" blanca que contiene la tabla */
+
 .content-card {
     background-color: #ffffff;
     width: 90%;
@@ -20,13 +17,12 @@
     border-radius: 12px;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
         0 8px 10px -6px rgba(0, 0, 0, 0.01);
-    /* Sombra suave y moderna */
     overflow: hidden;
-    /* Para que las esquinas de la tabla no se salgan */
+
     border: 1px solid #e5e7eb;
 }
 
-/* 3. Cabecera de la tarjeta */
+
 .card-header {
     padding: 24px 32px;
     border-bottom: 1px solid #f0f0f0;
@@ -36,36 +32,30 @@
 .card-header h2 {
     margin: 0;
     color: #111827;
-    /* Negro suave */
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 .subtitle {
     color: #6b7280;
-    /* Gris texto secundario */
     font-size: 0.9rem;
     margin-top: 4px;
     display: block;
 }
 
-/* 4. Contenedor de la tabla (Scroll horizontal si es necesario) */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
 }
 
-/* 5. Estilos de la Tabla */
 .modern-table {
     width: 100%;
     border-collapse: collapse;
     color: #374151;
-    /* IMPORTANTE: Fuerza el color del texto a gris oscuro */
 }
 
 .modern-table th {
     background-color: #f9fafb;
-    /* Fondo gris muy claro para cabecera */
     color: #4b5563;
     font-weight: 600;
     text-transform: uppercase;
@@ -83,17 +73,14 @@
     vertical-align: middle;
 }
 
-/* Filas */
 .modern-table tbody tr {
     transition: background-color 0.2s ease;
 }
 
 .modern-table tbody tr:hover {
     background-color: #f9fafb;
-    /* Hover sutil */
 }
 
-/* Estilos específicos de columnas */
 .name-col {
     font-weight: 600;
     color: #111827;
@@ -108,22 +95,18 @@
     color: #6b7280;
 }
 
-/* Badge (El código) */
 .status-badge {
     background-color: #eff6ff;
-    /* Azul muy claro */
     color: #2563eb;
-    /* Azul corporativo */
     padding: 4px 10px;
     border-radius: 9999px;
-    /* Pill shape */
     font-size: 0.75rem;
     font-weight: 600;
     border: 1px solid #dbeafe;
     display: inline-block;
 }
 
-/* Estados de carga/error */
+
 .loading-container,
 .error-container {
     display: flex;

@@ -1,4 +1,3 @@
-/* Reutilizamos la base visual consistente */
 .page-wrapper {
     min-height: 100vh;
     width: 100%;
@@ -9,11 +8,11 @@
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* Tarjeta ANCHA (Como la de clientes) */
+
 .content-card {
     background-color: #ffffff;
     width: 90%;
-    max-width: 1000px; /* Ancho para tablas grandes */
+    max-width: 1000px;
     border-radius: 12px;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
     border: 1px solid #e5e7eb;
@@ -45,7 +44,7 @@
     overflow-x: auto;
 }
 
-/* Tabla */
+
 .modern-table {
     width: 100%;
     border-collapse: collapse;
@@ -76,7 +75,7 @@
     background-color: #f9fafb;
 }
 
-/* Columnas específicas */
+
 .name-col {
     font-weight: 600;
     color: #111827;
@@ -91,14 +90,13 @@
     color: #6b7280;
 }
 
-/* Columna de dinero (Nuevo estilo) */
 .amount-col {
     font-weight: 700;
-    color: #059669; /* Un verde financiero bonito */
-    text-align: left; /* Alineado a la derecha como es estándar en finanzas */
+    color: #067d57;
+    text-align: right;
 }
 
-/* Utilidades */
+
 .loading-container {
     display: flex;
     justify-content: center;

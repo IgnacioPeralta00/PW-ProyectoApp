@@ -78,7 +78,6 @@ const CreateSale = () => {
                         />
                     </div>
 
-                    {/* Mensajes de estado */}
                     {status.message && (
                         <div className={`status-message ${status.type}`}>
                             {status.message}
