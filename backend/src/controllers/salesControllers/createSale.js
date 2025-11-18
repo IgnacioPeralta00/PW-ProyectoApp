@@ -5,20 +5,17 @@ export const createSale = async (req, res) => {
     const { amount, id_customer } = req.body;
 
     try {
-        // Validar que el id_customer exista
         const customerCheck = await pool.query('SELECT id FROM customers WHERE id = $1', [id_customer]);
 
         if (customerCheck.rowCount === 0) {
             return res.status(404).json({ message: 'El cliente no existe' });
         }
 
-        // Insertar la venta (NOW() para la fecha)
         const newSale = await pool.query(
             'INSERT INTO sales (amount, id_customer, created_at) VALUES ($1, $2, NOW()) RETURNING *',
             [amount, id_customer]
         );
 
-        // Responder con exito
         res.status(201).json({
             message: 'Venta registrada exitosamente',
             sale: newSale.rows[0]

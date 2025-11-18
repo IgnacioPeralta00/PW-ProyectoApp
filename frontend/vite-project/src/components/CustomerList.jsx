@@ -23,7 +23,7 @@ const CustomerList = () => {
             });
     }, []);
 
-    if (loading) return <div className="loading-container">Chargando...</div>;
+    if (loading) return <div className="loading-container">Cargando clientes...</div>;
     if (error) return <div className="error-container">Error: {error}</div>;
 
     return (
