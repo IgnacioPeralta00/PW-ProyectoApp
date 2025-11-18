@@ -1,0 +1,123 @@
+/* Base idéntica a SalesList para consistencia */
+.page-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    background-color: #f3f4f6;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.content-card {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 800px;
+    /* Un poco más angosto que la lista completa, se ve mejor para 2 columnas */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 24px 32px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #ffffff;
+}
+
+.card-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Tabla */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #374151;
+}
+
+.modern-table th {
+    background-color: #f9fafb;
+    color: #4b5563;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 16px 32px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modern-table td {
+    padding: 16px 32px;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 1rem;
+    /* Letra un poco más grande para reporte */
+    vertical-align: middle;
+}
+
+.modern-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Columnas */
+.name-col {
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* Espacio entre avatar y nombre */
+}
+
+.amount-col {
+    text-align: right;
+    font-family: monospace;
+    /* Alinea mejor los números */
+    font-size: 1.1rem;
+}
+
+/* Estilo especial para el total */
+.total-highlight {
+    color: #059669;
+    font-weight: 700;
+}
+
+/* Avatar circular con inicial */
+.client-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #e0e7ff;
+    color: #4338ca;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Utilidades */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: #6b7280;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #9ca3af;
+}

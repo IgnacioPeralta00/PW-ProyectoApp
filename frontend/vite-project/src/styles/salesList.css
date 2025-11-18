@@ -1,0 +1,107 @@
+/* Reutilizamos la base visual consistente */
+.page-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    background-color: #f3f4f6;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Tarjeta ANCHA (Como la de clientes) */
+.content-card {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1000px; /* Ancho para tablas grandes */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 24px 32px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #ffffff;
+}
+
+.card-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Tabla */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #374151;
+    text-align: left;
+}
+
+.modern-table th {
+    background-color: #f9fafb;
+    color: #4b5563;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 16px 32px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modern-table td {
+    padding: 16px 32px;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.modern-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Columnas específicas */
+.name-col {
+    font-weight: 600;
+    color: #111827;
+}
+
+.id-col {
+    color: #9ca3af;
+    font-family: monospace;
+}
+
+.text-muted {
+    color: #6b7280;
+}
+
+/* Columna de dinero (Nuevo estilo) */
+.amount-col {
+    font-weight: 700;
+    color: #059669; /* Un verde financiero bonito */
+    text-align: left; /* Alineado a la derecha como es estándar en finanzas */
+}
+
+/* Utilidades */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: #6b7280;
+}
